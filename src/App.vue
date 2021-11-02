@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SimpleSelect
+        :options="[{ label: 'Текст', choice: true },{ label: 'Длинный текст', choice: false },{ label: 'Очень длинный длинный длинный текст', choice: false },{ label: 'Текст', choice: false },{ label: 'Текст', choice: false },{ label: 'Текст', choice: false },{ label: 'Текст', choice: false },{ label: 'ttttТекст', choice: false },]"
+        :disabled="false"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SimpleSelect from './components/select/SimpleSelect.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SimpleSelect
   }
 }
 </script>
